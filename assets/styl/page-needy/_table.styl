@@ -1,0 +1,134 @@
+.table-sound {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom 100px
+
+  .table-sound__headers {
+    display: flex;
+    justify-content: space-between;
+    background: #e9ecef;
+    border-radius: 5px 5px 0px 0px;
+
+    .table-sound__headers-item {
+      padding: 27px 0;
+      text-align: center;
+      border-bottom: 3px solid #fff;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 140%;
+
+      &:nth-child(1) {
+        width: 15%;
+      }
+
+      &:nth-child(2) {
+        width: 25%;
+      }
+
+      &:nth-child(3) {
+        width: 15%;
+      }
+
+      &:nth-child(4) {
+        width: 20%;
+      }
+
+      &:nth-child(5) {
+        width: 25%;
+      }
+    }
+
+    .table-sound__headers-item + .table-sound__headers-item {
+      border-left: 3px solid #fff;
+    }
+  }
+
+  .table-sound__body {
+    background: #f8f9fa;
+
+    .table-sound__line {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .table-sound__item {
+      padding: 27px 0;
+      text-align: center;
+      border-bottom: 3px solid #fff;
+
+      &:nth-child(1) {
+        width: 15%;
+      }
+
+      &:nth-child(2) {
+        width: 25%;
+      }
+
+      &:nth-child(3) {
+        width: 15%;
+      }
+
+      &:nth-child(4) {
+        width: 20%;
+      }
+
+      &:nth-child(5) {
+        width: 25%;
+        padding: 10px;
+      }
+
+      .btn {
+        max-width: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+      }
+
+      .table-sound__item-date {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+      }
+
+      .table-sound__item-name {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 140%;
+        color: #fa5252;
+      }
+
+      .table-sound__item-counts {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: #212529;
+        padding: 10px 20px;
+        background: #fff;
+        border-radius: 5px;
+      }
+
+      .table-sound__item-price {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 140%;
+      }
+    }
+
+    .table-sound__item + .table-sound__item {
+      border-left: 3px solid #fff;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .table-sound {
+    // display: none;
+    overflow-y scroll
+    margin-bottom 50px
+
+    &__wrapper {
+      width: 1000px;
+    }
+  }
+}

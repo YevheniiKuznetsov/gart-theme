@@ -1,0 +1,40 @@
+@import "fonts";
+@import "reset";
+
+@import "header";
+@import "promo";
+@import "footer";
+@import "button";
+
+@import "page-index/section-posts";
+@import "page-index/section-connection";
+@import "page-index/section-news";
+@import "page-index/section-logos";
+
+@import "page-post/breabcrumbs";
+@import "page-post/page-post";
+@import "page-post/card-content";
+
+
+@import "popub";
+@import "form";
+
+
+@import "page-needy/desc-needy";
+@import "page-needy/props";
+@import "page-needy/table";
+
+@import "about-us/about-us";
+
+@import "payment/payment";
+
+@import "page-question/page-question";
+@import "card-news/card-news";
+
+@import "page-news-project/news-project";
+
+@import "pagination";
+
+@import "request-help/request-help.scss";
+
+@import "page-404/page-404";

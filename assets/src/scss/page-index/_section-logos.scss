@@ -1,0 +1,70 @@
+.logo-press {
+    background: #2B2E28;
+    padding: 40px 0 20px;
+
+    .logo-press__title {
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #F8F9FA;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .logo-press__inner {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 -25px;
+    }
+
+    .logo-press__item {
+        max-width: 150px;
+        width: 100%;
+        transition: all .3s;
+        margin: 12px;
+
+
+        &:hover {
+            filter: brightness(0.4);
+        }
+    }
+
+
+    .logo-press__item-img {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .logo-press {
+        .logo-press__inner {
+            margin: 0 -20px;
+        }
+
+        .logo-press__title {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .logo-press__item {
+            max-width: 100px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 568px) {
+    .logo-press {
+        .logo-press__inner {
+            margin: 0 -15px;
+        }
+
+        .logo-press__item {
+            max-width: 60px;
+        }
+    }
+}

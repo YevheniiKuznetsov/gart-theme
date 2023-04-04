@@ -1,0 +1,101 @@
+.btn {
+  display: block;
+  max-width: 280px;
+  width: 100%;
+  background: #0057B8;
+  border-radius: 49px;
+  padding: 18px 20px 17px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 150%;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all .3s;
+  border: none; 
+  cursor: pointer;
+
+  span {
+    position: relative;
+    transform: translateX(-14px); 
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-size: contain;
+      right: 0;
+      top: 50%;
+      transform: translate(150%, -50%);
+      line-height: 16px;
+    }
+  }
+
+  span.plus {
+    &::before {
+      background-image: url('../img/icons/icon-plus.png');
+    }
+  }
+
+  span.drop {
+    &::before {
+      background-image: url('../img/icons/icon-drop.png');
+    }
+  }
+
+  span.line-r {
+    &::before {
+      background-image: url('../img/icons/line-r.png');
+    }
+  }
+
+  span.icon-list {
+    &::before {
+      background-image: url('../img/icons/icon-list.png');
+    }
+  }
+
+  span.download {
+    &::before {
+      background-image: url('../img/icons/icon-download.png');
+    }
+  }
+    span.helper {
+          &::before {
+              background-image: url('../img/icons/helper-hend.png');
+          }
+      }
+
+      span.folder {
+          &::before {
+              background-image: url('../img/icons/folder-icon.png');
+          }
+      }
+
+  &:hover {
+    background: #FFD700;
+    color: #212529;
+  }
+
+}
+
+.section-posts {
+  .btn-more {
+    margin: 48px auto 0;
+  }
+}
+
+.post-button {
+  @extend .btn;
+  
+  max-width: 230px;
+  padding: 10px 20px 10px;
+}
+
+#add_more_news_project {
+  margin-top 20px
+}

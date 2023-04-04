@@ -1,0 +1,72 @@
+.logo-press {
+  background: #fff;
+  padding: 30px 0;
+  position: relative;
+  z-index: 5;
+
+  .logo-press__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 125%;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+
+  .carusel-partners {
+    display: flex;
+    overflow: hidden;
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      animation: animatedBackground 10s linear infinite;
+    }
+
+    &__box {
+      width: auto;
+      height: 98px;
+
+      &-img {
+        display: block;
+        height: 100%;
+        max-width: inherit;
+      }
+    }
+
+    &__box + .carusel-partners__box {
+      margin-left: 50px;
+    }
+  }
+}
+
+// Animation
+@keyframes animatedBackground {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .logo-press {
+    padding: 12px 0;
+
+    .logo-press__title {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .logo-press {
+    .carusel-partners__box {
+      height: 48px;
+    }
+  }
+}

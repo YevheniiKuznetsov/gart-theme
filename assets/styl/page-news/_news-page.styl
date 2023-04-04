@@ -1,0 +1,147 @@
+.content.news-page {
+  padding-top: 0;
+}
+
+.news-page {
+  padding-bottom: 64px;
+
+  .btn {
+    margin: 0 auto;
+  }
+
+  .box {
+    padding: 40px;
+    background: #ffffff;
+    box-shadow: 0px 8px 48px rgba(136, 136, 136, 0.12);
+    border-radius: 26px;
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .box-news {
+      width: 100%;
+    }
+
+    .box-news__title,
+    .box-actualProject__title {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 125%;
+      color: #212529;
+      margin-bottom: 28px;
+    }
+  }
+
+  .box-news__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px -20px;
+  }
+
+  .box-news__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: calc(50% - 20px);
+    margin-bottom: 40px;
+    background: #f8f9fa;
+    border-radius: 22px;
+    padding: 16px;
+
+    .box-news__item-top {
+      margin-bottom: 20px;
+    }
+
+    .box-news__item-footer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .box-news__item-view {
+      display: flex;
+    }
+
+    .box-news__item-picture {
+      width: 100%;
+      display: block;
+      border-radius: 14px;
+      margin-bottom: 8px;
+    }
+
+    .box-news__item-title {
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 140%;
+      color: #212529;
+    }
+
+    .box-news__item-date,
+    .box-news__item-cauntView {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 150%;
+    }
+
+    .box-news__item-icon {
+      max-width: 18px;
+      width: 100%;
+      margin-right: 4px;
+    }
+  }
+
+  .box-actualProject {
+    .contents .contents__post {
+      width: 100%;
+      box-shadow: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .news-page {
+    .box {
+      &__wrapper {
+        flex-direction: column;
+      }
+
+      .box-news {
+        margin-bottom: 60px;
+      }
+
+      .box-news__title,
+      .box-actualProject__title {
+        font-size: 18px;
+        margin-bottom: 18px;
+      }
+
+      .box-news__item {
+        .box-news__item-title {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .news-page {
+    .box {
+      padding: 24px;
+    }
+
+    .box-news__item {
+      max-width: calc(100%);
+      padding: 12px;
+      margin-bottom: 12px;
+
+      .box-news__item-title {
+        font-size: 16px;
+      }
+    }
+  }
+}

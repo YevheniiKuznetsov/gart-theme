@@ -1,0 +1,161 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+body {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  position: relative;
+  font-size: 18px;
+  line-height: 150%;
+  min-width: 320px;
+  margin: 0;
+  background: #f8f9fa;
+
+  &::after {
+    content: "";
+    width: calc(100vw - 90%);
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    top: 0;
+    background-image: url("@img/header-decoration.png");
+    background-size: contain;
+    background-repeat: repeat-y;
+    height: calc(100% - 87px);
+  }
+
+  &::before {
+    content: "";
+    width: calc(100vw - 90%);
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    top: 0;
+    transform: rotate(180deg);
+    background-image: url("@img/header-decoration.png");
+    background-size: contain;
+    background-repeat: repeat-y;
+    height: calc(100% - 87px);
+  }
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 30px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8dadb;
+  border-radius: 31px;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff;
+}
+
+.page-post {
+  background: #f5f5f5;
+}
+
+.fundraising-end {
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.42);
+    border-radius: 28px;
+    top: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 190px;
+    height: 190px;
+    background-image: url("@img/fundraising-end.png");
+    background-size: contain;
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 5;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    &::after {
+      width: calc(100vw - 94%);
+    }
+
+    &::before {
+      width: calc(100vw - 94%);
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  body {
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}

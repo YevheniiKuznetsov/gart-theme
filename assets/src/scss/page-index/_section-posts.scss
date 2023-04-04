@@ -1,0 +1,361 @@
+.section-posts {
+  padding: 32px 0;
+}
+
+.navigation-tab {
+  margin-bottom: 32px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation-tab__item {
+    width: 100%;
+    max-width: calc(25% - 24px);
+    border: 4px solid #0057b8;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #212529;
+    padding: 17px 10px;
+    border-radius: 49px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .navigation-tab__item--active {
+    background: #0057b8;
+    color: #fff;
+  }
+}
+
+.contents {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -14px;
+  }
+
+  .contents__post {
+    width: calc(25% - 28px);
+    margin: 0 14px 28px;
+    background: #f1f3f5;
+    box-shadow: 0px 8px 48px rgba(136, 136, 136, 0.12);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .btn {
+    max-width: 100%;
+  }
+
+  .contents__post-img {
+    width: 100%;
+    border-radius: 29px;
+    display: block;
+    height: 182px;
+    object-fit: cover;
+  }
+
+  .fundraising-end {
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.42);
+      border-radius: 28px;
+      top: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 5;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      background-image: url("@img/fundraising-end.png");
+      background-size: contain;
+    }
+  }
+
+  .contents__post-line {
+    width: 100%;
+    height: 1px;
+    background: #495057;
+    margin: 16px 0 10px;
+  }
+
+  .contents__post-title {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #212529;
+    margin-bottom: 8px;
+  }
+
+  .contents__post-desc {
+    font-weight: 500;
+    font-size: 14px;
+    color: #343a40;
+    line-height: 130%;
+    width: 100%;
+  }
+
+  .box {
+    margin: 16px 0 24px;
+
+    .box__top {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
+
+    .box__footer {
+      width: 100%;
+    }
+  }
+
+  .objective-end__img,
+  .objective-now__img {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 48px rgba(136, 136, 136, 0.12);
+    width: 56px;
+    height: 56px;
+    padding: 14px;
+    margin-right: 20px;
+  }
+
+  .objective-now__content-count,
+  .objective-end__content-count {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #212529;
+  }
+
+  .objective-end__content-count {
+    max-width: 280px;
+  }
+
+  .objective-now__content-text,
+  .objective-end__content-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    color: #212529;
+  }
+
+  .objective-end {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+  }
+
+  .objective-now {
+    max-width: 170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .progress-bar {
+    background: #e9ecef;
+    border-radius: 31px;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .progress-bar__active {
+    background: #ffd700;
+    height: 30px;
+    position: absolute;
+    border-radius: 31px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  // full - element
+  .objective-end__img-icon--full path {
+    fill: #20c997;
+  }
+
+  .progress-bar__active--full {
+    background: #20c997;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .section-posts {
+    padding: 20px 0;
+  }
+
+  .navigation-tab {
+    margin-bottom: 20px;
+
+    .navigation-tab__item {
+      padding: 14px 10px;
+    }
+  }
+
+  .contents {
+    .contents__inner {
+      margin: 0 -6px 12px;
+    }
+
+    .contents__post {
+      width: calc(25% - 12px);
+      margin: 0 6px 12px;
+    }
+
+    .box {
+      margin: 10px 0 15px;
+
+      .box__top {
+        margin-bottom: 10px;
+      }
+    }
+
+    .progress-bar {
+      height: 25px;
+    }
+
+    .objective-end__img,
+    .objective-now__img {
+      width: 40px;
+      height: 40px;
+      padding: 6px;
+      margin-right: 15px;
+    }
+
+    .objective-now__content-count,
+    .objective-end__content-count {
+      font-size: 20px;
+    }
+
+    .objective-now__content-text,
+    .objective-end__content-text {
+      font-size: 14px;
+    }
+
+    .contents__post {
+      padding: 15px;
+    }
+
+    .contents__post-title {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    .contents__post-desc {
+      line-height: 130%;
+    }
+  }
+
+  .btn {
+    padding: 15px 20px 15px;
+    font-size: 14px;
+  }
+
+  .header .box .language-switch .language-switch__item {
+    padding: 8px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .navigation-tab {
+    .navigation-tab__item {
+      font-size: 14px;
+    }
+  }
+
+  .contents {
+    .contents__post-title {
+      font-size: 18px;
+    }
+
+    .objective-now__content-count,
+    .objective-end__content-count {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navigation-tab {
+    .navigation-tab__inner {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .navigation-tab__item {
+      max-width: calc(50% - 24px);
+    }
+  }
+
+  .contents {
+    .contents__inner {
+      margin: 0 -14px 14px;
+    }
+
+    .contents__post {
+      width: calc(50% - 28px);
+      margin: 0 14px 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .navigation-tab {
+    overflow-x: scroll;
+    padding-bottom: 15px;
+
+    .navigation-tab__inner {
+      flex-wrap: nowrap;
+      gap: 20px;
+      width: 1000px;
+    }
+
+    .navigation-tab__item {
+      max-width: 280px;
+      font-weight: 500;
+    }
+  }
+
+  .contents {
+    .contents__inner {
+      gap: 0px;
+    }
+
+    .contents__post {
+      width: calc(100%);
+    }
+
+    .contents__post + .contents__post {
+      margin-top: 15px;
+    }
+  }
+
+  .section-posts {
+    .btn-more {
+      margin: 20px auto 0;
+    }
+  }
+}

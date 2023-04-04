@@ -1,0 +1,41 @@
+.breabcrumbs {
+    padding: 24px 0 26px;
+    background: #F5F5F5;
+
+    .breabcrumbs__list {
+        display: flex;
+        align-items: center;
+    }
+
+    .breabcrumbs__list-item {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 150%;
+        color: #495057;
+
+        img {
+            margin-right: 12px;
+            width: 12px;
+            height: 14px;
+            display: block;
+        }
+
+        span {
+            margin-right: 12px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 568px) {
+    .breabcrumbs {
+        padding: 20px 0 15px;
+
+
+        .breabcrumbs__list-item {
+            font-size: 13px;
+
+
+        }
+    }
+}
